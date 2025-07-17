@@ -6,8 +6,8 @@
 
 #define gummyBearWidth gameboyWidth*4
 #define gummyBearHeight gameboyHeight*4
-int main() {
-    
+int main() 
+{
     SDL_Window* win = SDL_CreateWindow("gummyBear", gummyBearWidth, gummyBearHeight, SDL_WINDOW_MAXIMIZED);
     SDL_Renderer *renderer = SDL_CreateRenderer(win, NULL);
     SDL_Event event;
@@ -16,7 +16,8 @@ int main() {
     {
         while (SDL_PollEvent(&event))
         {  
-            switch(event.type) {
+            switch(event.type) 
+            {
                 case SDL_EVENT_QUIT:
                     SDL_DestroyWindow(win);
                     SDL_Quit();
